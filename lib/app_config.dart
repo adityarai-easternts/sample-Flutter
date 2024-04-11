@@ -10,7 +10,7 @@ class AppConfig {
       case Flavor.prod:
         return "Prod flavor challaaa";
       case Flavor.dev:
-        return "Dev flavor challlaa";
+        return "UAT flavor challlaa";
       case null:
         return "Dikkat Flavor challlaaa";
     }

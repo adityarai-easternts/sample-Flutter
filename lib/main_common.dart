@@ -23,7 +23,6 @@ void mainCommon() async {
 }
 
 class MyApp extends StatelessWidget {
-
   const MyApp({super.key});
 
   @override
@@ -31,9 +30,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: AppConfig.appName,
       theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: AppConfig.primaryColor)
-      ),
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(seedColor: AppConfig.primaryColor)),
       routerConfig: _router,
     );
   }
@@ -43,6 +41,9 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(AppConfig.appName),
+      ),
       body: Center(
         child: SafeArea(
           child: Column(
@@ -52,32 +53,40 @@ class MainPage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => RandomWords())),
                   child: Text("Random Words")),
               ElevatedButton(
-                  onPressed: () => Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Layouts())),
+                  onPressed: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Layouts())),
                   child: Text("Layout Demo")),
               ElevatedButton(
-                  onPressed: () => Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => ListDemo())),
+                  onPressed: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ListDemo())),
                   child: Text("List Demo")),
               ElevatedButton(
                   onPressed: () => Navigator.push(context,
                       MaterialPageRoute(builder: (context) => AppBarApp())),
                   child: Text("App bar Demo")),
               ElevatedButton(
-                  onPressed: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AutocompleteApp())),
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AutocompleteApp())),
                   child: Text("Autocomplete Demo")),
               ElevatedButton(
-                  onPressed: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => BottomAppBarApp())),
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => BottomAppBarApp())),
                   child: Text("Bottom App Bar Demo")),
               ElevatedButton(
-                  onPressed: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => BottomNavBarApp())),
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => BottomNavBarApp())),
                   child: Text("Bottom Nav Bar Demo")),
               ElevatedButton(
-                  onPressed: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => NavigationDemoApp())),
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => NavigationDemoApp())),
                   child: Text("Nav Demo using navigator")),
               ElevatedButton(
                   onPressed: () => GoRouter.of(context).push("/todo"),

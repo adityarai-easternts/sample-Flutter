@@ -7,4 +7,3 @@ void main(){
   AppConfig.appFlavor = Flavor.dev;
   mainCommon();
 }
-
