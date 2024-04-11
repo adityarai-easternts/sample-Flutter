@@ -4,7 +4,7 @@ enum Flavor { prod, dev }
 
 class AppConfig {
   static Flavor? appFlavor;
-  
+
   static String get appName {
     switch (appFlavor) {
       case Flavor.prod:
@@ -12,7 +12,7 @@ class AppConfig {
       case Flavor.dev:
         return "UAT flavor challlaa";
       case null:
-        return "Dikkat Flavor challlaaa";
+        return "Some error with flavors";
     }
   }
 

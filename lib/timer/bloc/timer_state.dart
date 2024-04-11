@@ -1,6 +1,5 @@
 part of 'timer_bloc.dart';
 
-
 sealed class TimerState extends Equatable {
   const TimerState(this.duration);
   final int duration;
@@ -35,5 +34,5 @@ final class TimerRunInProgess extends TimerState {
 }
 
 final class TimerRunComplete extends TimerState {
-  const TimerRunComplete(): super(0);
+  const TimerRunComplete() : super(0);
 }

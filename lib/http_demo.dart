@@ -61,7 +61,7 @@ class Album {
 }
 
 class MyHttpDemo extends StatelessWidget {
-  const MyHttpDemo({super.key}); 
+  const MyHttpDemo({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
