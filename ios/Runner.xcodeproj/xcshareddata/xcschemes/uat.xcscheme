@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88F4CB6D2BC7B10E005F7915"
-               BuildableName = "RunnerProd.app"
-               BlueprintName = "RunnerProd"
+               BlueprintIdentifier = "88F4CB592BC7B0D6005F7915"
+               BuildableName = "RunnerUAT.app"
+               BlueprintName = "RunnerUAT"
                ReferencedContainer = "container:Runner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,7 +30,7 @@
       shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug Prod"
+      buildConfiguration = "Debug UAT"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -52,18 +52,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88F4CB6D2BC7B10E005F7915"
-            BuildableName = "RunnerProd.app"
-            BlueprintName = "RunnerProd"
+            BlueprintIdentifier = "88F4CB592BC7B0D6005F7915"
+            BuildableName = "RunnerUAT.app"
+            BlueprintName = "RunnerUAT"
             ReferencedContainer = "container:Runner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = ""
-            isEnabled = "NO">
-         </CommandLineArgument>
-      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -75,18 +69,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88F4CB6D2BC7B10E005F7915"
-            BuildableName = "RunnerProd.app"
-            BlueprintName = "RunnerProd"
+            BlueprintIdentifier = "88F4CB592BC7B0D6005F7915"
+            BuildableName = "RunnerUAT.app"
+            BlueprintName = "RunnerUAT"
             ReferencedContainer = "container:Runner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88F4CB6D2BC7B10E005F7915"
-            BuildableName = "RunnerProd.app"
-            BlueprintName = "RunnerProd"
+            BlueprintIdentifier = "88F4CB592BC7B0D6005F7915"
+            BuildableName = "RunnerUAT.app"
+            BlueprintName = "RunnerUAT"
             ReferencedContainer = "container:Runner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
